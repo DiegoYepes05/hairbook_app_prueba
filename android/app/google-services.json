@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "835234235011",
+    "project_id": "prueba-tecnica-30a90",
+    "storage_bucket": "prueba-tecnica-30a90.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835234235011:android:b9c49caaa9b1096e8811b6",
+        "android_client_info": {
+          "package_name": "com.example.hairbook_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqrw-uI1FA_9Ub_bZGM3Lq6MvdrabbvBU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
