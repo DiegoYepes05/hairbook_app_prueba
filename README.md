@@ -1,16 +1,16 @@
 # hairbook_app
 
-A new Flutter project.
+Pasos para correr el proyecto
 
-## Getting Started
+1. Clonar el proyecto
+2. Correr el comando ```flutter pub get```
+3. Correr el comando ```flutter run``` O ```F5```
 
-This project is a starting point for a Flutter application.
+El proyecto esta conectado con una base de datos de firebase en la cual se traen todos los datos de los salones
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Requisitos del proyecto
+1. gestor de estado: ``` Riverpod anotations```
+2. se utilizo clean architecture y DDD (Domain Driven Design)
+3. se utilizo firebase para la base de datos
+4. se utilizo go_router para la navegacion

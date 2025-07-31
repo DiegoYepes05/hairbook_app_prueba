@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:hairbook_app/features/home/presentation/providers/credit_provider.dart';
 import 'package:hairbook_app/features/home/presentation/providers/home_detail_provider.dart';
 
 class HomeDetailScreen extends ConsumerWidget {
@@ -116,8 +117,32 @@ class HomeDetailScreen extends ConsumerWidget {
                           ),
                         ),
 
-                        onPressed: () {
-                          /* TODO: reservar */
+                        onPressed: () async {
+                          try {
+                            final messenger = ScaffoldMessenger.of(context);
+                            final navigator = Navigator.of(context);
+                            final credits = ref.read(creditProvider.notifier);
+
+                            credits.deductCredits(data.creditCost);
+
+                            messenger.showSnackBar(
+                              SnackBar(
+                                content: Text(
+                                  '¡Reserva exitosa! Se han descontado ${data.creditCost} créditos',
+                                ),
+                              ),
+                            );
+
+                            await Future.delayed(const Duration(seconds: 1));
+                            if (navigator.canPop()) {
+                              navigator.pop();
+                            }
+                          } catch (e) {
+                            // ignore: use_build_context_synchronously
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              SnackBar(content: Text(e.toString())),
+                            );
+                          }
                         },
                         child: const Text('Reservar'),
                       ),
