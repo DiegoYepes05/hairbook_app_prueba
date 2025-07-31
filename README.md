@@ -14,7 +14,6 @@
 3. Reservar un salon
 4. Filtrar salones por tipos
 5. Sitemas de creditos por salones reservados 
-El proyecto esta conectado con una base de datos de firebase en la cual se traen todos los datos de los salones
 
 
 ## Tecnologias utilizadas
@@ -23,6 +22,7 @@ El proyecto esta conectado con una base de datos de firebase en la cual se traen
 2. se utilizo clean architecture y DDD (Domain Driven Design)
 3. se utilizo firebase para la base de datos
 4. se utilizo go_router para la navegacion
+5. El proyecto esta conectado con una base de datos de firebase en la cual se traen todos los datos de los salones
 
 
 ## Diseño
